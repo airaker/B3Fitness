@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/">
+
+    <meta name="description" content="Meta description for the page">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Title that shows up on google searches"/>
+    <meta property="og:description" content="Meta description for the page"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Official link for that page (https://www.site.com)"/>
+    <meta property="og:image" content="/assets/images/social.jpg"/>
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg"/>
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/core-styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/dark.css">
+
+    <title>Service Keyword Phrase | Company Name | City, State</title>
+</head>
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/index.html" class="cs-logo" aria-label="back to home">
+                <img src="assets/svgs/logo2.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index.html" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about.html" class="cs-li-link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/reviews.html" class="cs-li-link">
+                                Reviews
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/contact.html" class="cs-li-link">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="/contact.html" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+        <section id="hero-81">
+            <div class="cs-container">
+                <h1 class="cs-title">Building Bodies, Boosting Health, and Bringing Balance</h1>
+                <p class="cs-text">
+                    Micro-gym providing expert training, cutting-edge equipment, and personalized wellness programs tailored for all fitness levels. 
+                </p>
+                <a href="" class="cs-button-solid">Schedule Now</a>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)" srcset="/assets/images/pexels-leon-ardho-1552242-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg">
+                <img decoding="async" src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" alt="gym-photo" width="2250" height="1500" aria-hidden="true">
+            </picture>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Services                   -->
+        <!-- ============================================ -->
+
+        <section id="h-services-81">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="/assets/svgs/heartbeat.svg" alt="appliance" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h2 class="cs-title">Personalized Training Programs</h2>
+                    <p class="cs-text">
+                        Tailored workout plans designed to meet individual fitness goals and maximize results.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="/assets/svgs/yoga.svg" alt="appliance" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h2 class="cs-title">Group Fitness Classes</h2>
+                    <p class="cs-text">
+                        Dynamic and energizing classes led by certified instructors, offering a variety of workouts from yoga to HIIT. 
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon">
+                        <img loading="lazy" decoding="async" src="/assets/svgs/apple.svg" alt="appliance" width="52" height="52" aria-hidden="true">
+                    </picture>
+                    <h2 class="cs-title">Nutritional Counseling</h2>
+                    <p class="cs-text">
+                        Professional guidance and personalized nutrition plans to optimize performance, enhance recovery, and support overall well-being. 
+                    </p>
+                </li>
+            </ul>
+        </section>                     
+                                
+        <!-- ============================================ -->
+        <!--                   About Us                   -->
+        <!-- ============================================ -->
+
+        <section id="RPsbs-580">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/pexels-pixabay-260352.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg" alt="room" width="494" height="700">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Who We Are</span>
+                    <h2 class="cs-title">B3 FITNESS</h2>
+                    <p class="cs-text">
+                        At our micro-gym, we're more than a fitness center - we're a holistic wellness community. Our skilled trainers, top-tier equipment, and personalized services help you achieve your goals. Join our supportive community for transformation today!
+                    </p>
+                    <p class="cs-text">
+                        We're dedicated to sculpting stronger bodies, fostering healthier lifestyles, and building lasting connections. With our expert trainers, diverse classes, and personalized approach, we're here to guide you towards your fitness aspirations, one step at a time.
+                    </p>
+                    <a href="" class="cs-button-solid">Call Now</a>
+                </div>
+            </div>
+        </section>
+                                        
+        <!-- ============================================ -->
+        <!--             Service Highlight                -->
+        <!-- ============================================ -->
+
+        <section id="RPsbsr-580">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/pexels-pixabay-416809.jpg">
+                    <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg" alt="room" width="494" height="700">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">What We Do</span>
+                    <h2 class="cs-title">Transform lives through fitness and wellness.</h2>
+                    <p class="cs-text">
+                        B3 Fitness is dedicated to transforming lives through comprehensive fitness and wellness programs. Our expert trainers provide personalized guidance and support, empowering individuals to surpass their fitness goals.
+                    </p>
+                    <p class="cs-text">
+                        With state-of-the-art equipment and a supportive community, we create an environment where every member can thrive. We believe in holistic well-being, fostering resilience, growth, and lasting positive changes in all aspects of our members' lives.
+                    </p>
+                    <a href="" class="cs-button-solid">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
+        <section id="reviews-42">
+            <div class="reviews-subheading">
+                How about some reviews
+            </div>
+            <div class="reviews-heading">
+                Listen to our members
+            </div>
+            <img id="air-quote-1"class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+            <img id="air-quote-2"class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+            <div class="filterDiv container review1">                
+                <div class="review-container">
+                    <div class="review-text">
+                        <p>Great people and great coaches. Not what I expected, in a good way, CrossFit to be like. All experience levels are welcome and everyone is encouraged to get a little better everyday...</p></div>
+                    <div class="review-name">
+                        
+                        <h1>Eric Brewington</h1></div>
+                </div>
+            </div>
+            <div class="filterDiv container review2">                
+                <div class="review-container">
+                    <div class="review-text"><p>I dropped in for a few classes over Thanksgiving and it was a great experience. Everyone was super welcoming and friendly. The coaches were really helpful and willing to give tips on form even though I wasn't a member. Really enjoyed the classes, definitely recommend them if you're looking for a gym!</p></div>
+                    <div class="review-name">
+                        
+                        <h1>Jeanna Bussing</h1></div>
+                </div>
+            </div>
+            <div class="filterDiv container review3">                
+                <div class="review-container">
+                    <div class="review-text"><p>Yes, there really is a Crossfit gym here... and it is the biggest and most well-stocked I have ever been to. Great coaches, great community and great people. Lots of classes at common and uncommon times. Definitely recommend.
+                    </p></div>
+                    <div class="review-name">                       
+                        <h1>Aaron Austin</h1></div>
+                </div>
+
+            </div>
+            <div id="review-buttons">
+                <button class="btn active" onclick="filterSelection('review1')"></button>
+                <button class= "btn" onclick="filterSelection('review2')"></button>
+                <button class= "btn" onclick="filterSelection('review3')"></button>
+            </div>
+        </section>
+                 
+        <!-- ============================================ -->
+        <!--                 Meet The Team                -->
+        <!-- ============================================ -->
+
+        <section id="meet-team-221">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Meet The Team</span>
+                    <h2 class="cs-title">Here's our trainers</h2>
+                    <p class="cs-text">
+                        Our team at B3 Fitness is the foundation of our success. We cherish their dedication, expertise, and commitment to our members' well-being. With their passion and professionalism, we create a supportive environment where everyone can thrive and achieve their fitness aspirations.
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" alt="portrait" width="275" height="132">
+                        </picture>
+                        <span class="cs-name">Zachary</span>
+                        <span class="cs-job-title">Nutritionist</span>
+                        <p class="cs-item-text">
+                            ACE-certified trainer specializing in strength and conditioning.
+                        </p>
+                        <!-- Social Flexbox -->
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/twitter-grey.svg" alt="twitter" width="15" height="13">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Linked in" target="_blank" rel="noopener">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/linkedin-grey.svg" alt="linkedin" width="17" height="16">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" alt="portrait" width="275" height="132">
+                        </picture>
+                        <span class="cs-name">John</span>
+                        <span class="cs-job-title">Ceritifed IFBB Pro</span>
+                        <p class="cs-item-text">
+                            Experienced CrossFit coach passionate about functional fitness.
+                        </p>
+                        <!-- Social Flexbox -->
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/twitter-grey.svg" alt="twitter" width="15" height="13">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Linked in" target="_blank" rel="noopener">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/linkedin-grey.svg" alt="linkedin" width="17" height="16">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="cs-item">
+                        <picture class="cs-picture">
+                            <img aria-hidden="true" loading="lazy" decoding="async" src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=" alt="portrait" width="275" height="132">
+                        </picture>
+                        <span class="cs-name">Emily</span>
+                        <span class="cs-job-title">Zen Connoisseur</span>
+                        <p class="cs-item-text">
+                            Yoga instructor blending mindfulness and movement for holistic wellness.
+                        </p>
+                        <!-- Social Flexbox -->
+                        <div class="cs-social">
+                            <a href="" class="cs-link" aria-label="Twitter" target="_blank" rel="noopener">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/twitter-grey.svg" alt="twitter" width="15" height="13">
+                            </a>
+                            <a href="" class="cs-link" aria-label="Linked in" target="_blank" rel="noopener">
+                                <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Meet-Team/linkedin-grey.svg" alt="linkedin" width="17" height="16">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="" class="cs-button-solid">Book Now</a>
+            </div>
+        </section>
+                                
+        <!-- ============================================ -->
+        <!--                   Reviews                    -->
+        <!-- ============================================ -->
+
+        <section id="reviews-727">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Testimonials</span>
+                    <h2 class="cs-title">Trusted by Thousands, Just like You</h2>
+                    <p class="cs-text">
+                        Our members speak volumes. Discover why they love B3 Fitness through their glowing testimonials. From life-changing transformations to exceptional service, join us and be part of our success story.
+                    </p>
+                </div>
+                <ul class="cs-card-group">
+                    <li class="cs-item">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                        <h3 class="cs-h3">Amazing Atmosphere!</h3>
+                        <p class="cs-item-text">
+                            The atmosphere at B3 Fitness is electric! From the moment you step in, you feel motivated and supported by the vibrant community. It's more than a gym; it's a family dedicated to wellness and growth.
+                        </p>
+                        <span class="cs-name">Gregory</span>
+                    </li>
+                    <li class="cs-item">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/yellow-quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                        <h3 class="cs-h3">Affordable</h3>
+                        <p class="cs-item-text">
+                            With reasonable membership rates and exceptional amenities, it's the perfect blend of value and quality. You don't have to break the bank to invest in your health and fitness here!
+                        </p>
+                        <span class="cs-name">Daniel</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+                                
+
+        <!-- ============================================ -->
+        <!--                     CTA                      -->
+        <!-- ============================================ -->
+
+        <section id="cta-51">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact Us</span>
+                    <h2 class="cs-title">It's time to get in Balance.</h2>
+                    <p class="cs-text">
+                        Ready to embark on your fitness journey? Start achieving your goals with our expert trainers, state-of-the-art facilities, and supportive community.
+                    </p>
+                    <a href="" class="cs-button-solid">Call Now</a>
+                </div>
+            </div>
+            <!-- Background Image-->
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="/assets/images/pexels-andrea-piacquadio-903171-m.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/pexels-andrea-piacquadio-903171.jpg">
+                <img loading="eager" decoding="async" src="/assets/images/pexels-andrea-piacquadio-903171.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+            </picture>
+        </section>                                          
+    </main>
+
+    <!-- ============================================ -->
+    <!--                   Footer                     -->
+    <!-- ============================================ -->
+
+    <footer id="cs-footer-269">
+        <div class="cs-container">
+            <!-- Logo Group -->
+            <div class="cs-logo-group">
+                <a aria-label="go back to home" class="cs-logo" href="">
+                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="assets/svgs/logo2.svg" alt="logo" width="240" height="32">
+                </a>
+                <p class="cs-text">
+                    Empowering wellness. Transforming lives. Join us @B3Fitness info@b3fitness.com
+                </p>
+            </div>
+            <!-- Links -->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Sitemap</span>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Home</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">About Us</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Reviews</a>
+                </li>
+                
+                <li class="cs-nav-li">
+                    <a class="cs-nav-link" href="">Contact Us</a>
+                </li>
+            </ul>
+            <!-- Contact Info -->
+            <ul class="cs-contact">
+                <li class="cs-nav-li">
+                    <span class="cs-header">Contact</span>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="tel: 123-456-7890">(123) 456-7890</a>
+                </li>
+                <li class="cs-contact-li">
+                    <a class="cs-contact-link" href="mailto:info@codestitch.com">info@b3fitness.com</a>
+                </li>
+                <!-- Social Media -->
+                <li class="cs-contact-li cs-social-group">
+                    <div class="cs-social">
+                        <a class="cs-social-link" aria-label="visit google profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                        </a>
+                        <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+                                
+
+    <script defer src="/assets/js/nav.js"></script>
+    <script defer src="/assets/js/reviews.js"></script>
+
+    <!--Gallery JS-->
+    <script>
+        class CS_GalleryFilter {
+            filtersSelector = '.cs-button'
+            galleriesSelector = '.cs-gallery'
+            activeClass = 'cs-active'
+            hiddenClass = 'cs-hidden'
+
+            constructor() {
+                this.$galleries = document.querySelectorAll(this.galleriesSelector)
+                const $filters = document.querySelectorAll(this.filtersSelector)
+
+                this.onClick($filters[0])
+
+                for (const $filter of $filters) {
+                    $filter.addEventListener('click', () => this.onClick($filter))
+                }
+            }
+
+            onClick($filter) {
+                this.filter($filter.dataset.filter)
+
+                const { activeClass } = this
+
+                this.$activeFilter?.classList.remove(activeClass)
+                $filter.classList.add(activeClass)
+
+                this.$activeFilter = $filter
+            }
+
+            filter(filter) {
+                const showAll = filter == 'all'
+                const { hiddenClass } = this
+
+                for (const $gallery of this.$galleries) {
+                    const show = showAll || $gallery.dataset.category == filter
+                    $gallery.classList.toggle(hiddenClass, !show)
+                }
+            }
+        }
+
+        new CS_GalleryFilter()
+                                
+    </script>
+</body>
+</html>
